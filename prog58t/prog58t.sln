@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 # SharpDevelop 4.4
-Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "prog58t", "prog58t\prog58t.pyproj", "{19F3B1FF-61B6-49FC-94BF-4B7D201AE9F7}"
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "prog58t", "prog58t\prog58t.pyproj", "{40D66134-60BD-431B-8011-560D3F54C743}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,9 +10,9 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{19F3B1FF-61B6-49FC-94BF-4B7D201AE9F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{19F3B1FF-61B6-49FC-94BF-4B7D201AE9F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{19F3B1FF-61B6-49FC-94BF-4B7D201AE9F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{19F3B1FF-61B6-49FC-94BF-4B7D201AE9F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D66134-60BD-431B-8011-560D3F54C743}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D66134-60BD-431B-8011-560D3F54C743}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D66134-60BD-431B-8011-560D3F54C743}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40D66134-60BD-431B-8011-560D3F54C743}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal
