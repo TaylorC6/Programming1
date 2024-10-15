@@ -18,6 +18,7 @@ else:
 
 tcost = (dozens * price) + (remainder * ((1.0 / 12) * price))
 
+print("Price: $%.2f") % price
 print("Total Cost: $%.2f") % tcost
 
 input()
