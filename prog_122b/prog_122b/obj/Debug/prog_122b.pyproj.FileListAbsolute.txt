@@ -1,0 +1,12 @@
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\obj\Debug\prog_122b.pyprojResolveAssemblyReference.cache
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\obj\Debug\prog_122b.MainForm.resources
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\obj\Debug\prog_122b.pyproj.GenerateResource.Cache
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\bin\Debug\prog_122b.exe.config
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\bin\Debug\prog_122b.exe
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\bin\Debug\prog_122b.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\bin\Debug\IronPython.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\bin\Debug\IronPython.Modules.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\bin\Debug\Microsoft.Scripting.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_122b\prog_122b\obj\Debug\prog_122b.exe
