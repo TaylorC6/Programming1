@@ -101,10 +101,10 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         input = int(self._textBox1.Text)
         mul = input
-        for mul in range(input, 1, -1):
+        for num in range(1, input):
+            mul *= num
             
-            
-        self._label2.Text = "The value of " + str(input) + "! is " + str(output)
+        self._label2.Text = "The value of " + str(input) + "! is " + str(mul)
 
     def Button2Click(self, sender, e):
         self._label2.Text = ""
