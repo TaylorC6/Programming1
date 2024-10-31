@@ -78,13 +78,13 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         mysum = 0
         lcv = 3 # loop control variable
-        while lcv <= 9669: # run code WHILE true
-        mysum += lcv
-        $ItemList.add_item(str(mysum))
-        lcv += 3
+        while mysum < 9669: # run code WHILE true
+            mysum += lcv
+            self._listBox1.Items.Add(str(mysum))
+        
 
     def Button2Click(self, sender, e):
-        pass
+        self._listBox1.Items.Clear()
 
     def Button3Click(self, sender, e):
-        pass
+        Application.Exit()

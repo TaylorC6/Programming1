@@ -103,13 +103,14 @@ class MainForm(Form):
         Application.Exit()
 
     def Label2Click(self, sender, e):
-        listBox1.Items.Clear()
+        self._listBox1.Items.Clear()
 
     def Label1Click(self, sender, e):
         test = int(self._textBox1.Text)
+        var = 0
         for num in range(2, test + 1, 2):
-            var = num
-            while var <= test:
-                var += var
-                write = str(num) + "\t\t" + str(var)
-                self._listBox1.Items.Add(write)               
+            var += num
+            write = str(num) + "\t\t" + str(var)
+            self._listBox1.Items.Add(write)
+            if var >= test:
+                break

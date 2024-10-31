@@ -124,11 +124,10 @@ class MainForm(Form):
         guests = int(self._textBox1.Text)
         chairs = int(self._textBox2.Text)
         stand = guests - chairs
-        perms = stand
-        s = stand + 1
-        for num in range(s, guests):
+        perms = guests
+        for num in range(guests-1, stand, -1):
             perms *= num
-            self._label2.Text = "Guests: " + str(guests) + "\nChairs: " + str(chairs) + "\nPermutations: " + str(perms) + "\nStanding: " + str(stand)
+        self._label2.Text = "Guests: " + str(guests) + "\nChairs: " + str(chairs) + "\nPermutations: " + str(perms) + "\nStanding: " + str(stand)
             
 
     def Button2Click(self, sender, e):
