@@ -1,0 +1,12 @@
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\bin\Debug\prog186.exe.config
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\bin\Debug\prog186.exe
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\bin\Debug\prog186.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\bin\Debug\IronPython.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\bin\Debug\IronPython.Modules.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\bin\Debug\Microsoft.Scripting.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\obj\Debug\prog186.pyprojResolveAssemblyReference.cache
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\obj\Debug\prog186.MainForm.resources
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\obj\Debug\prog186.pyproj.GenerateResource.Cache
+C:\Users\cahill.t1\Desktop\Programming1\prog186\prog186\obj\Debug\prog186.exe
