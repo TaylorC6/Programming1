@@ -1,0 +1,10 @@
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\obj\Debug\prog_54a_dct.pyprojResolveAssemblyReference.cache
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\bin\Debug\prog_54a_dct.exe.config
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\bin\Debug\prog_54a_dct.exe
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\bin\Debug\prog_54a_dct.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\bin\Debug\IronPython.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\bin\Debug\IronPython.Modules.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\bin\Debug\Microsoft.Scripting.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\cahill.t1\Desktop\Programming1\prog_54a_dct\obj\Debug\prog_54a_dct.exe
