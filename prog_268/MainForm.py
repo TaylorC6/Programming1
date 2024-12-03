@@ -146,6 +146,9 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         cals = int(self._textBox2.Text)
         fats = int(self._textBox1.Text)
+        cd = float(fats * 9)
+        percent = (cd / cals) * 100
+        self._label3.Text = "%" + "%.2f" % (percent)
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
