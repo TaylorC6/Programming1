@@ -152,16 +152,27 @@ class MainForm(Form):
         self.Text = "prog_296_2"
         self.ResumeLayout(False)
         self.PerformLayout()
+        
+    def get_price(self, N):
+        return 0.2 if N in range(10,20) else 0.3 if N in range(20,50) else 0.4 if N in range(50,100) else 0.5 if N >= 100 else 0.0
 
 
     def Button1Click(self, sender, e):
         A = int(self._textBox6.Text)
         B = int(self._textBox2.Text)
         C = int(self._textBox3.Text)
-        discount = 0.0
-        if A >= 10 and A <= 19:
-            discount = 20.0
-        self._label6.Text = str(discount)
+        discountA = self.get_price(A)
+        discountB = self.get_price(B)
+        discountC = self.get_price(C)
+        A *= 99 
+        B *= 199 
+        C *= 299 
+        A -= A*discountA
+        B -= B*discountB
+        C -= C*discountC
+        tot = C + A + B
+            
+        self._label6.Text = "A = %.2f" % (A) + "\n" + "B = %.2f" % (B) + "\n" + "C = %.2f" % (C) + "\n" + "Total = %.2f" % (tot)
 
     def Button2Click(self, sender, e):
         self._textBox2.Text = ""
