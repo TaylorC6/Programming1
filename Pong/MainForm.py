@@ -12,6 +12,12 @@ class MainForm(Form):
         self.balld  = 0
         self.flagleft = False
         self.flagright = False
+        self.time = 0
+        self.time10 = 0
+        self.timeMin = 0
+        self.timeMin10 = 0
+        self.timeHour = 0
+        self.timeHour10 = 0
     
     def InitializeComponent(self):
         self._components = System.ComponentModel.Container()
@@ -30,6 +36,7 @@ class MainForm(Form):
         self._lblMouth = System.Windows.Forms.Label()
         self._timer5 = System.Windows.Forms.Timer(self._components)
         self._label1 = System.Windows.Forms.Label()
+        self._timer1 = System.Windows.Forms.Timer(self._components)
         self.SuspendLayout()
         # 
         # lbltitle
@@ -105,7 +112,7 @@ class MainForm(Form):
         # 
         # timerball
         # 
-        self._timerball.Interval = 1
+        self._timerball.Interval = 20
         self._timerball.Tick += self.TimerballTick
         # 
         # timermulti
@@ -134,12 +141,19 @@ class MainForm(Form):
         # 
         # label1
         # 
+        self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 26.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._label1.ForeColor = System.Drawing.Color.White
-        self._label1.Location = System.Drawing.Point(440, 118)
+        self._label1.Location = System.Drawing.Point(408, 96)
         self._label1.Name = "label1"
-        self._label1.Size = System.Drawing.Size(100, 23)
+        self._label1.Size = System.Drawing.Size(156, 41)
         self._label1.TabIndex = 7
-        self._label1.Text = "label1"
+        self._label1.Text = "00:00:00"
+        self._label1.Visible = False
+        # 
+        # timer1
+        # 
+        self._timer1.Interval = 10
+        self._timer1.Tick += self.Timer1Tick
         # 
         # MainForm
         # 
@@ -270,12 +284,10 @@ class MainForm(Form):
             reset()
         
         """TODO: SECRET CONTROL """
-        if e.KeyCode == Keys.D0:
-            self._lblMouth.Visible = not self._lblMouth.Visible
-            while self._leftscore.Left != 485:
-                self._leftscore.Left += 1
-            while self._leftscore.Top != 237:
-                self._leftscore.Top -= 1
+        if e.KeyCode == Keys.T:
+            self._label1.Visible = True
+            self._timer1.Enabled = True
+            self._label1.Text = str(self.timeHour10) + str(self.timeHour) + ":" + str(self.timeMin10) + str(self.timeMin) + ":" + str(self.time10) + str(self.time)
             
         #485, 237
         #319, 237
@@ -336,7 +348,23 @@ class MainForm(Form):
     def Timer5Tick(self, sender, e):
         if self._timerball.Interval != 2:
             self._timerball.Interval -= 2
-        if self._timerright.Interval = 4
+        if self._timerright.Interval != 6:
             self._timerright.Interval -= 1
             self._timerleft.Interval -= 1
-            self._label1.Text = str(self._timerball.Interval)
+
+    def Timer1Tick(self, sender, e):
+        self.time = 0
+        self.time10 = 0
+        self.timeMin = 0
+        self.timeMin10 = 0
+        self.timeHour = 0
+        self.timeHour10 = 0
+        if e.KeyCode == Keys.T:
+            if self.time < 10:
+                self.time += 1 
+            else:
+                self.time = 0
+                self.time10 += 1
+            if self.time10 >= 10:
+                self.time10 = 0
+            
