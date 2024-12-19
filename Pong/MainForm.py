@@ -1,6 +1,7 @@
 ﻿import System.Drawing
 import System.Windows.Forms
 
+from time import time
 from System.Drawing import *
 from System.Windows.Forms import *
 
@@ -18,6 +19,7 @@ class MainForm(Form):
         self.timeMin10 = 0
         self.timeHour = 0
         self.timeHour10 = 0
+        self.timerActive = False
     
     def InitializeComponent(self):
         self._components = System.ComponentModel.Container()
@@ -240,6 +242,8 @@ class MainForm(Form):
         In Total and Finish Multiplayer and Scoreboard and Dummy AI """
         self.balld = 1
         self.ballup = self.R.Next(-4, 5)
+        if self.timerActive:
+            self._label1.Text = time.
         
     def pdlTick(self, pdl, flagd, tmr):
         if flagd == True:
@@ -285,9 +289,10 @@ class MainForm(Form):
         
         """TODO: SECRET CONTROL """
         if e.KeyCode == Keys.T:
+            self.timerActive = True
             self._label1.Visible = True
             self._timer1.Enabled = True
-            self._label1.Text = str(self.timeHour10) + str(self.timeHour) + ":" + str(self.timeMin10) + str(self.timeMin) + ":" + str(self.time10) + str(self.time)
+
             
         #485, 237
         #319, 237
@@ -311,7 +316,9 @@ class MainForm(Form):
             elif e.KeyCode == Keys.Down:
                 self.flagright = True
                 tright.Enabled = True
-                
+        
+        
+            
             """ TODO: FINISH MULT CONTROLS """
             
         if tmult.Enabled and tball.Enabled:
@@ -353,13 +360,7 @@ class MainForm(Form):
             self._timerleft.Interval -= 1
 
     def Timer1Tick(self, sender, e):
-        self.time = 0
-        self.time10 = 0
-        self.timeMin = 0
-        self.timeMin10 = 0
-        self.timeHour = 0
-        self.timeHour10 = 0
-        if e.KeyCode == Keys.T:
+        if self.timerActive:
             if self.time < 10:
                 self.time += 1 
             else:
@@ -367,4 +368,5 @@ class MainForm(Form):
                 self.time10 += 1
             if self.time10 >= 10:
                 self.time10 = 0
+            self._label1.Text = str(self.timeHour10) + str(self.timeHour) + ":" + str(self.timeMin10) + str(self.timeMin) + ":" + str(self.time10) + str(self.time)
             
